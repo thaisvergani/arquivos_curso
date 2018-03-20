@@ -1,0 +1,10 @@
+
+{% if all_products %}
+  <ul>
+    {% for product in all_products %}
+    <li><a href="/{{product.id}}">{{product.name}}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <h3>nenhum produto cadastrado</h3>
+{% endif %}
